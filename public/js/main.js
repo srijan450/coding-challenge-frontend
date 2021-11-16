@@ -108,12 +108,13 @@ getId("userpost").onsubmit = async (e) => {
             else
                 displayModal("Operation Failed");
 
-            e.target.elements.title.style.borderColor = "black";
-            e.target.elements.body.style.borderColor = "black";
+            e.target.elements.title.style.borderColor = "";
+            e.target.elements.body.style.borderColor = "";
             e.target.elements.username.style.borderColor = "black";
             e.target.elements.title.value = "";
             e.target.elements.body.value = "";
             e.target.elements.username.value = "";
+            getId("map").innerHTML = `<img src="//286832-886580-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/04/foundergif.gif" class="map" alt="gif"/>`
         }
     }
     catch (err) {
