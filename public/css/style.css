@@ -12,7 +12,7 @@
 
 }
 body{
-    padding: 40px;
+    padding: 30px;
     height: 100vh;
     background-image: linear-gradient(90deg,var(--mid_purple),var(--white), var(--light_purple));
     animation: animateBack 2s linear 0s infinite both;
@@ -194,7 +194,7 @@ form h2 {
 
 @media only screen and (max-width: 950px) {
     body {
-        padding: 0px;
+        padding: 5px;
         height: auto;
     }
 
@@ -240,7 +240,7 @@ form h2 {
     }
 
     .paralleDis {
-        padding: 10px;
+        padding: 20px 5px;
     }
 
     .modal{
@@ -253,7 +253,7 @@ form h2 {
     }
 
     .mapp {
-        height: 12rem;
+        height: 15rem;
         border-radius: 10px 10px 0px 0px;
     }
 
