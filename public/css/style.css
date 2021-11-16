@@ -163,7 +163,7 @@ input[type=text] {
 }
 
 .modal p {
-    text-align: justify;
+    text-align: center;
     padding: 5px 20px 20px 20px;
 }
 
@@ -195,6 +195,9 @@ input[type=text] {
         border-radius: 20px 20px 20px 20px;
         width: 80%;
     }
+    .modal{
+        width: 50%;
+    }
 
     .mapp {
         height: 12rem;
@@ -215,7 +218,9 @@ input[type=text] {
         padding: 10px;
     }
 
-
+    .modal{
+        width: 80%;
+    }
     .mapp,
     form {
         width: 100%;
