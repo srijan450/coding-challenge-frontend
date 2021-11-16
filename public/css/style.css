@@ -1,6 +1,6 @@
 * {
-    --dark_purple: #280B67;
-    --mid_purple: #6730ec;
+    --dark_blue: #303744;
+    --mid_purple: #68f2f2;
     --light_purple: #7984ee;
     --sky_blue: #d2f6fc;
     --white: #ffffff;
@@ -14,10 +14,25 @@
 body{
     padding: 40px;
     height: 100vh;
-    background-image: linear-gradient(90deg,var(--mid_purple) 50%, var(--light_purple));
+    background-image: linear-gradient(90deg,var(--mid_purple),var(--white), var(--light_purple));
+    animation: animateBack 2s linear 0s infinite both;
+    /* name duration timing-function delay iteration-count direction fill-mode; */
 }
+
+@keyframes animateBack{
+    0%{
+        background-image: linear-gradient(90deg,var(--mid_purple),var(--sky_blue), var(--light_purple));
+    }
+    34%{
+        background-image: linear-gradient(90deg,var(--sky_blue),var(--mid_purple), var(--light_purple));
+    }
+    67%{
+        background-image: linear-gradient(90deg,var(--light_purple),var(--mid_purple),var(--sky_blue));
+    }
+}
+
 .header {
-    background: var(--dark_purple);
+    background: #253147;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -107,35 +122,44 @@ form h2 {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'M PLUS 1', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: #303744;
 }
 
 .input-group {
     display: grid;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-input[type=text] {
+.input-group label{
+    font-weight: 500;
+   
+    text-transform: capitalize;
+}
+.input-group input[type=text] {
     padding: 10px 20px;
 }
 
 .submit {
     text-align: center;
+    margin-top: 20px;
 }
 
 .submit button {
-    padding: 5px 60px;
-    font-weight: 400;
+    padding: 5px 30px;
+    font-weight: 700;
     text-transform: uppercase;
     background-image: linear-gradient(90deg, var(--mid_purple), var(--light_purple));
-    color: var(--white);
+   border-radius: 10px;
+    color: #303744;
     font-size: 20px;
     border: none;
 }
 
+
 .submit button:hover {
-    background-image: linear-gradient(90deg, var(--dark_purple), var(--mid_purple));
+    background-image: linear-gradient(90deg, var(--dark_blue), var(--mid_purple));
+    color: var(--white);
 }
 .modal-background {
     height: 100vh;
@@ -154,6 +178,7 @@ input[type=text] {
     background-color: white;
     width: 30%;
     padding-top: 0px;
+    border-radius: 20px;
 }
 
 .modal h3 {
@@ -200,7 +225,7 @@ input[type=text] {
     }
 
     .mapp {
-        height: 12rem;
+        height: 15rem;
     }
 
     .map {
@@ -228,7 +253,7 @@ input[type=text] {
     }
 
     .mapp {
-        height: 200px;
+        height: 12rem;
         border-radius: 10px 10px 0px 0px;
     }
 
