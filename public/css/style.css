@@ -65,7 +65,7 @@ body{
 
 .paralleDis{
     display: flex;
-    /* align-items: stretch; */
+    height: 50vh;
     width: 100vw;
     justify-content: center;
 }
@@ -219,6 +219,7 @@ form h2 {
         margin: 10px auto;
         border-radius: 20px 20px 20px 20px;
         width: 80%;
+        /* height: 50vh; */
     }
     .modal{
         width: 50%;
@@ -231,6 +232,11 @@ form h2 {
     .map {
         border-radius: 20px 20px 20px 20px;
     }
+    .map img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -241,6 +247,7 @@ form h2 {
 
     .paralleDis {
         padding: 20px 5px;
+        height: auto;
     }
 
     .modal{
@@ -253,7 +260,7 @@ form h2 {
     }
 
     .mapp {
-        height: 15rem;
+        height: 20rem;
         border-radius: 10px 10px 0px 0px;
     }
 
